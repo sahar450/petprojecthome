@@ -1,0 +1,52 @@
+@import '../css/global.css';
+.mainBox{
+    background-color: #FBFBFB;
+    border-radius:20px ;
+    padding: 12px 20px;
+    margin: 16px;
+}
+
+.mainBox-title{
+    color: #3D5252;
+    font-family: "Shabnam";
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+
+.mainBox-head{
+    display: flex;
+    justify-content: space-between;
+    align-content: baseline;
+    margin-top: 17px;
+    margin-bottom:44px;
+}
+.mainBox-head-right{
+      display: flex;
+  align-items: center;
+}
+.inputmeet{
+    font-size: 14px;
+    border-radius: 100px;
+    font-family: "Yekan";
+    width: 280px;
+    margin-left: 20px;
+    padding: 5px;
+    border: 1.5px solid #CDDDE0;
+}
+
+.mainBox-head-left{
+    display: flex;
+}
+@media (max-width: 700px) {
+  .mainBox-head-left{
+    display:none;
+
+  }
+  .filterbtn{
+     display: none;
+  }
+  .inputmeet{
+    width:208px;
+  }
+}

@@ -1,0 +1,165 @@
+@import '../css/global.css';
+
+.topBOX {
+  background-color: white;
+  padding: 20px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.topBOXright {
+  display: flex;
+}
+.topBOXright-left {
+  margin-right: 16px;
+}
+.topBOXright-left h2 {
+  color: #3D5252;
+  font-family: 'Shabnam';
+  font-size: 24px;
+}
+.topBOXright-info-box {
+  background-color: #f8f0e3;
+  padding: 8px 12px 8px 8px;
+  border-radius: 12px;
+  border: 1px solid #E1910C;
+  margin-top: 15px;
+}
+.topBOXright-info-box span {
+  color: #D87703;
+  font-size: 12px;
+  font-family: 'Shabnam';
+  font-weight: 400;
+}
+.topBOXright-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+.topBOXright-info span {
+  font-family: 'Yekan';
+  color: #3D5252;
+  font-size: 14px;
+  font-weight: 400;
+}
+.topBOXright-info button {
+  background-color: transparent;
+  border: none;
+  width: 24px;
+  height: 24px;
+  margin: 0px 13px 13px 13px;
+}
+
+.version {
+  background-color: #FBFBFB;
+  border-radius: 20px;
+  padding: 12px 20px 12px 20px;
+}
+
+.version h5 {
+  color: #3D5252;
+  font-size: 18px;
+  font-family: 'Shabnam';
+  font-weight: 400;
+  margin-top: 9px;
+  line-height: 140%;
+  margin-bottom: 18px;
+}
+
+.version-tabbar {
+  display: flex;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.version-tabbar button {
+  background-color: transparent;
+  border: none;
+  padding: 8px 16px;
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.version-icon {
+  color: #96B3B5;
+  margin-left: 9px;
+  font-size: 18px;
+}
+
+.version-titletab {
+  font-family: 'Shabnam';
+  color: #96B3B5;
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 30px;
+}
+
+/* حالت فعال */
+.active .version-icon,
+.active .version-titletab {
+  color: #009688;
+  font-weight: 600;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #009688;
+  border-radius: 2px;
+}
+.tabBar-content{
+    background-color: #EDF1F2;
+    border-radius: 16px;
+    padding: 12px 16px;
+    margin-top: 16px;
+}
+
+.tabBar-content-title{
+    color: #889FA0;
+    font-size: 14px;
+    font-family: "Shabnam";
+    font-weight: 500;
+    margin-bottom: 13px;
+}
+
+.btn {
+  display: flex;
+  justify-content:flex-end;
+}
+
+
+@media (max-width: 768px) {
+ 
+  .topBOXright-img{
+    width: 98%;
+  }
+   .version-tabbar {
+    flex-wrap: nowrap;
+    overflow-x: auto; 
+  }
+  .add{
+   flex-wrap: nowrap;
+    overflow-x: auto; 
+  }
+  .version-tabbar button {
+    padding: 4px 8px;  
+  }
+
+  .version-icon {
+    font-size: 14px;  
+    margin-left: 4px;  
+  }
+
+  .version-titletab {
+    font-size: 12px;   
+    margin-left: 8px;  
+  }
+}
+
